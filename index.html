@@ -13,12 +13,12 @@
         <div class="box">
             <h1>BMI Calculator</h1>
         <p>Height in CM:
-            <input type="number" id="height"><br><span id="height_error"></span>
+            <input type="number" id="height" onkeypress="return isNumberKey(event)"/><br><span id="height_error"></span>
             
         </p>
 
         <p>Weight in KG:
-            <input type="number" id="weight"><br><span id="weight_error"></span>
+            <input type="number" id="weight" onkeypress="return isNumberKey(event)"/><br><span id="weight_error"></span>
             
         </p>
 
