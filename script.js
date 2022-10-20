@@ -5,6 +5,12 @@ button.addEventListener('click', () => {
     const weight = parseInt(document.getElementById('weight').value);
     const result = document.getElementById('output');
     let height_status=false, weight_status=false;
+    
+    function isNumberKey(evt){
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
 
     if(height === '' || isNaN(height) || (height <= 0)){
         document.getElementById('heigh_error').innerHTML = 'Please provide a valid height';
